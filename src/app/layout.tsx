@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 
 import Providers from "./providers";
 import { cn } from "@/lib/utils";
-import Provider from "@/store/Provider";
+import Root from "@/store/Root";
 
 const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
@@ -34,9 +34,9 @@ export default function RootLayout({
     >
       <body>
         <Providers>
-          <Provider> 
+          <Root> 
             {children}
-          </Provider>
+          </Root>
         </Providers>
       </body>
     </html>
